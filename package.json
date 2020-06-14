@@ -1,0 +1,19 @@
+{
+  "name": "medwhiz_cluster_automation",
+  "version": "1.0.0",
+  "description": "Automation framework for DigitalOcean Droplet scheduler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ravindra Shukla",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.9.18",
+    "node-cron": "^2.0.3",
+    "winston": "^3.2.1",
+    "xml-js": "^1.6.11"
+  }
+}

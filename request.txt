@@ -1,0 +1,30 @@
+{
+    "name": "<HOSTNAME>",
+    "region": "<REGION>",
+    "size": "<SIZE>",
+    "image": "<IMAGE_ID>",
+    "ssh_keys": [<SSH_KEYS>],
+    "backups": false,
+    "ipv6": true,
+    "user_data": "
+      #cloud-config
+      write_files:
+        - path: /config.txt
+          content: |
+            PARAM1:<PARAM1>
+            PARAM2:<PARAM2>
+            PARAM3:<PARAM3>
+            PARAM4:<PARAM4>
+            PARAM5:<PARAM5>
+            PARAM6:<PARAM6>
+            PARAM7:<PARAM7>
+      runcmd:
+        - rm /root/medwhiz_clustering.py
+        - wget -P /root <PYTHON_SCRIPT_URL>
+        - python3 /root/medwhiz_clustering.py
+        - rm /config.txt
+        - rm /root/medwhiz_clustering.py",
+    "private_networking": null,
+    "volumes": null,
+    "tags": ["<TAGS>"]
+  }
