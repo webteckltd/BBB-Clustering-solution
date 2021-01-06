@@ -9,7 +9,7 @@
   "author": "Ravindra Shukla",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "mongoose": "^5.9.18",
     "node-cron": "^2.0.3",
